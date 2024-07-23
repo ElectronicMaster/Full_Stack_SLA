@@ -13,7 +13,7 @@
 
 .header{
     height: 10%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,25 +32,105 @@
 
 .main{
     height: 70%;
-    border: 2px solid black;
+    width: 100%;
     display: flex;
     flex-wrap: row;
 
-}
+} 
 .main__image{
     background-image: url("Images\\Portrait.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 50%;
 }
 .main__text{
     display: flex;
+    width: 50%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.main__text-1{
+    font-size: 8vw;
+}
+.main__text-2{
+    font-size: 3vw;
+}
+.main__text-3{
+    font-size: 3vw;
+}
+.main__text-4{
+    font-size: 3vw;
+}
+
 .footer{
+    padding-top: 20px;
     height: 10%;
-    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+    margin-right: 15%;
+    /* border: 2px solid green; */
+}
+
+.footer__instagram{
+    font-size: 5vw;
+}
+.footer__twitter{
+    font-size: 5vw;
+}
+.footer__dribbble{
+    font-size: 5vw;
+}
+.footer__behance{
+    font-size: 5vw;
+}
+
+@media (max-width: 650px){
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .header__logo{
+        font-size: 10vw;
+    }
+    .header__menu{
+        display: none;
+    }
+
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__image{
+        width: 225px;
+        height: 225px;
+        border-radius: 100%;
+        background-size: 100%;
+    }
+    .main__text{
+        margin-top: 20px;
+    }
+    .main__text-1{
+        display: none;
+    }
+    .main__text-2,.main__text-3,.main__text-4{
+        font-size: 6vw;
+    }
+
+    .footer{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 40px
+    }
+    .footer__behance,.footer__dribbble,.footer__instagram,.footer__twitter{
+        font-size: 10vw;
+    }
 }
