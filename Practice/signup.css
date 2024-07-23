@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.column-1{
+    grid-column-start: 2;
+    display: flex;
+    justify-content: right;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+.column-2{
+    grid-column-start: 3;
+}

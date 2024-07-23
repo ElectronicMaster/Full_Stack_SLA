@@ -1,0 +1,1 @@
+(1) In JavaScript, the order in which functions and their references are placed in the code does not always need to follow the strict top-down approach found in some other programming languages. This flexibility is due to how JavaScript handles function declarations and function expressions.

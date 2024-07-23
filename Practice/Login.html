@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Login/Sign up Page</title>
+        <link rel="stylesheet" href="Logic.css">
+        <script src="Login.js"></script>
+    </head>
+    <body style="background-image: url(images.jpg); background-size: 100% 100%;">
+        <h1>SIGN UP</h1>
+        <div id="centering">
+            <div id="border" style="background-color: rgb(255, 239, 219);">
+                <div id="elements">
+                    <label style="text-align: center;width: 490px;"><strong>--- Login Details ---</strong></label>
+                    <label for="name">Name:</label>
+                    <input id="nameFirst" type="text" placeholder="First name">
+                    <input id="nameLast" type="text" placeholder="Last name">
+                    <br>
+                    <label for="username">Username:</label>
+                    <input style="width: 345px;" id="username" type="text" placeholder="Username">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input style="width: 345px;" id="email" type="email" placeholder="example@mail.com">
+                    <br>
+                    <label for="password">Password:</label>
+                    <input style="width: 345px;" id="password" type="password" placeholder="(Set an strong password)" oninput="checkerLengthPass()">
+                    <br>
+                    <label for="repassword">Confirm Password:</label>
+                    <input style="width: 345px;" id="repassword" type="password" placeholder="(Re-Enter the Password)" oninput="checkerSamePass()">
+                    <label id="charCheck" style="width: 490px;margin-top: 0px;color: grey;margin-left: 140px;"><em>-- length of password must be more than 8</em></label> 
+                    <label id="sameCheck" style="width: 490px;margin-top: 0px;color: grey;margin-left: 140px;"><em>-- password and confirm password must be same</em></label> 
+                    <br>
+                    <label style="text-align: center;width: 490px;margin-top: 30px;"><strong>--- Your Personal Data ---</strong></label>
+                    <br>
+                    <label>Gender</label>
+                    <input name="gender" id="g1" type="radio" value="Male">Male
+                    <input name="gender" id="g2" type="radio" value="Female">Female
+                    <br>
+                    <label>Contact Number: </label>
+                    <input id="contact" type="tel" placeholder="ex: 1234567890">
+                    <br>
+                    <label>Date of Birth: </label>
+                    <input id="dob" style="width: 170px;" type="date">
+                    <br>
+                    <label>Country: </label>
+                    <select id="Country" style="width: 170px;">
+                        <option>INDIA</option>
+                        <option>USA</option>
+                        <option>JAPAN</option>
+                        <option>CHINA</option>
+                        <option>SRI LANKA</option>
+                        <option>PAKISTAN</option>
+                        <option>AFGHANISTAN</option>
+                    </select>
+                    <br>
+                    <label>State: </label>
+                    <select id="State" style="width: 170px;">
+                        <optgroup label="INDIA">INDIA</optgroup>
+                        <option>Tamil nadu</option>
+                        <option>Kerala</option>
+                        <option>Bangalore</option>
+
+                        <optgroup label="USA">USA</optgroup>
+                        <option>California</option>
+                        <option>Texas</option>
+                        <option>Florida</option>
+
+                        <optgroup label="CHINA">CHINA</optgroup>
+                        <option>Zhejiang</option>
+                        <option>Sichuan</option>
+                        <option>Guangdong</option>
+                    </select>
+                    <table style="margin-top: 30px;">
+                        <caption style="width: 490px"><strong>--- Agree or Disagree ---</strong></caption>
+                        <tr>
+                            <td>
+                                <input id="terms" type="checkbox">
+                                <label style="width: 300px;margin-top: 0px;"> I agree to terms and conditions</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input id="noti" type="checkbox">I would like to recieve notification</td>
+                        </tr>
+                    </table>
+                    <button onclick="signupPress()">SIGN UP</button>
+                    <button onclick="refresh()">RESET</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

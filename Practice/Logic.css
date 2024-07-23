@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+label{
+    width: 140px;
+    display:inline-block;
+    margin-top: 10px;
+}
+
+#elements{
+    width: 490px;
+}
+
+#centering{
+    display: flex;
+    justify-content: center;
+}
+
+#border{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+optgroup{
+    background-color: aqua;
+}
+
+table,td{
+    border: 1px solid black;
+}
+
+button{
+    margin-top: 20px;
+    width: 240px;
+    height: 50px;
+}

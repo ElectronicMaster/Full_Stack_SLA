@@ -1,0 +1,17 @@
+<html>
+    
+    <input id="input_1" draggable="true" type="reset" ondragstart="drag(event)">
+    <div id="div_1" style="border: 1px solid black;height: 100px;width: 100px;margin-top: 100px;" ondragover="allowDrop(event)" ondrop="drop(event)">
+    </div>
+    <input id="input_2" type="submit" draggable="true" ondragstart="drag(event)">
+
+    <button id="openDialog">open Dialog</button>
+    <dialog id="myDialog">
+        <h2>Dialog Title</h2>
+        <p>Sign up is completed..</p>
+        <p>Please login to proceed further..</p>
+        <button id="closeDialog">close</button>
+    </dialog>
+
+    <script src="class3_css.js"></script>
+</html>

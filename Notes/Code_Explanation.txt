@@ -1,0 +1,38 @@
+(1) the below code is about the javascript function that returns the value of width everytime we resize and displays it on screen:
+
+    window.onresize = screen;   
+    window.onload = screen;
+
+    function screen(){
+        myWidth = window.innerWidth;
+        document.getElementById("size").innerHTML
+        = "Width : " + myWidth + "px";
+    }
+
+    1. Event Listener:
+
+        window.onresize = screen;   
+        window.onload = screen;
+
+    these lines attach the 'screen' function to the 'onresize' and 'onload' events of the window object. This means the 'screen' function will be called whenever the window is resized or when the page is loaded.
+
+    but, here the 'screen' function does not have 'screen()' in that because:
+        * without parantheses ('screen'):
+            By assigning 'screen' without parantheses, your're telling JavaScript to use the 'screen' function as the event handler. This means the function will be called automatically when the 'resize' or 'load' event happens
+        * With parantheses('screen()'):
+            Using 'screen()' wourl call the function immediately and assign the return value of 'screen()' (which is 'undefined' unless the function explicitly returns something) to the event handler. This is not desired because you want the function itself to be executed when the event occurs, not immediately during the assignment.
+        
+    This kind of doing also found in many programming languages as well example: python, ruby, java, cpp, etc...
+
+    2. The 'screen' function:
+
+        function screen(){
+            myWidth = window.innerWidth;
+            document.getElementById("size").innerHTML = "Width : " + myWidth + "px";
+        }
+
+    * 'myWidth = window.innerWidth;': This line gets the current width of the windows content area (excluding toolbars/scrollbars) and assigns it to the variable 'myWidth'.
+
+    * 'document.getElementById("size").innerHTML = "Width : " + myWidth + "px;" : This line finds the HTML element with the ID 'size' and its 'innerHTML' to a string displaying the current width in pixels.
+
+(2) ...

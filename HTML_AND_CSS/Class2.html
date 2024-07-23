@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <title>Audio</title>
+        <link rel="stylesheet" href="Class2.css">
+    </head>
+
+    <script src="Class2.js"></script>
+    <!-- <style></style> -->
+    <body>
+        <audio controls>
+            <!--
+                controls : If this attribute is present, the browser will offer controls to allow the user to control audio playback, including volume, seeking, and pause/resume playback.
+            -->
+            <source src="" type="audio/mpeg"></source>
+        </audio>
+
+        <!--
+            its an inline tag
+        -->
+        <div>
+            <label>An button : </label>
+            <button type="button" style="background-color: green;padding: 20px;margin-top: 10px;">Click Me!</button>
+        </div>
+
+        <!--
+            to render button in next line
+            onclick -> is a thing will happen when we click it
+
+            'onclick' is an event 
+        -->
+        <div>
+            <label>An button</label>
+            <div>
+                <button type="button" onclick="submit()" style="background-color: green;padding: 20px;margin-top: 10px;">Click Me!</button>
+            </div>
+        </div>
+
+        <div>
+            <input type="text" id="submit" onchange="whatchanged(event)"/>
+        </div>
+
+        <div>
+            <table border="2px" style="margin-top: 20px;">
+                <caption>Hello Table</caption>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Saianuush</td>
+                    <td>2nd</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Gowtham</td>
+                    <td>2nd</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <dl><!--Discription List-->
+                <dt>Coffee</dt><!--Discription Title-->
+                <dd>Black hot coffe beans must be added</dd><!--Deiscription Data-->
+                <dd>Coffee is good</dd>
+
+                <dt>Milk</dt>
+                <dd>Whit cold milk expires in 1 day</dd>
+            </dl>
+        </div>
+
+        <!-- 
+            <strong> -> tag is -> BOLD
+            <em> -> tag is same as -> ITALIC
+        -->
+        <div>
+            <p><strong>adadasds sadsada</strong> ddsadsda sad sadas <em>sdsadasd sda da</em></p>
+        </div>
+
+        <div>
+            <label for="file">Download progress:</label>
+            <progress if="file" value="30" max="100">30%</progress>
+            <!--
+                * max = Specifies how much work the task requires in total. Default value is 1
+
+                * value = Specifies how much of the task has been completed
+
+                * The 30% you have put between the <progress> tags is fallback text for browsers that do not support the <progress> element. In modern browsers that do support the <progress> element, this text will not be displayed. Instead, the progress bar will be displayed with the value set to 30 out of a maximum of 100.
+            -->
+        </div>
+
+        <div style="margin-top: 20px;">
+            <!--
+                select-> inline attribute
+            -->
+            <select name="Car">
+                <optgroup label="1stGroup">
+                    <option>Volvo</option>
+                    <option>KIA</option>
+                </optgroup>
+                <optgroup label="2nd Group">
+                    <option>Benz</option>
+                    <option>BMW</option>
+                </optgroup>
+            </select>
+            <form>
+                <select name="Car">    <!--Disabled just disables-->
+                    <optgroup label="1stGroup">
+                        <option>Volvo</option>
+                        <option>KIA</option>
+                    </optgroup>
+                    <optgroup label="2nd Group">
+                        <option>Benz</option>
+                        <option>BMW</option>
+                    </optgroup>
+                </select>
+            </form>
+            <!-- 
+                types of attribute like disabled:
+                    -> Multiple -> multiple values can be selected
+                    -> Autofocus -> will focus  or higlight it as first to do
+                    -> Form -> specifies which form the drop down specifying 
+                    -> required -> 
+            -->
+        </div>
+
+        <div>
+            <template>
+                <h1>This template</h1>
+            </template>
+            <button onclick="showContent()">click to show</button>
+        </div>
+        
+        <div>
+            <p>Area of a circle is calculated using : </p>
+            <var>Area = π * (r<sub>radius</sub>)<sup>2</sup></var>
+        </div>
+
+        <div>
+            <video width="1000px" height="500px" controls>
+                <source src="video.mp4" type="video/mp4">
+                <!--mp4,ogg-->
+            </video>
+        </div>
+
+        <div>
+            <nav>
+                <a href="https://www.google.com">Google</a>
+            </nav>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <mark style="background-color: pink;">
+                <label>HELLO WORLD</label>
+                <a href="https://www.google.com">Google</a>
+            </mark>
+            <label>hey <mark>Hellow</mark>how are you</label>
+        </div>
+
+        <div>
+            <label id="label1">HELLO WORLD</label>
+            <label class="label2">HELLO WORLD</label>
+        </div>
+
+        <div>
+            <label for="pass">give password : </label>
+            <input class="pass" type="password"/>
+            <input type="button" name="submit" value="submit"/>
+            <div>
+                <input type="checkbox">
+                <label>label1</label>
+            </div>
+            <div>
+                <input type="color">
+            </div>
+            <div>
+                <input type="date" onchange="showalert(event)">
+            </div>
+            <div>
+                <input type="file">
+            </div>
+            <div>
+                <input type="email">
+            </div>
+            <div>
+                <input type="time">
+            </div>
+            <div>
+                <input type="month">
+            </div>
+            <div>
+                <input type="number">
+            </div>
+            <div>
+                <!--Name must be same in radio button-->
+                <label>PM</label>
+                <input name="slot" type="radio">
+                <label>AM</label>
+                <input name="slot" type="radio">
+            </div>
+            <div>
+                <input type="range">
+            </div>
+            <div>
+                <input type="reset">
+            </div>
+            <div>
+                <input type="search">
+            </div>
+            <div>
+                <input type="tel">
+            </div>
+            <div>
+                <input type="url">
+            </div>
+            <div>
+                <input type="week">
+            </div>
+            <div>
+                <input type="hidden">
+            </div>
+        </div>
+        <!--marque-->
+        
+    </body>
+</html>

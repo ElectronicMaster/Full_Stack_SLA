@@ -1,0 +1,12 @@
+body{
+    background-color: #D3D3D3;
+    margin: 0px;
+}
+
+.body{
+    margin: 50px auto;
+    border: 2px solid black;
+    height: calc(100vh - 100px);
+    width: calc(100vw - 100px);
+    box-sizing: border-box;
+}
